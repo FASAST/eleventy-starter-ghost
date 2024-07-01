@@ -35,7 +35,7 @@ module.exports = function (config) {
     selector:
       "img, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
     attribute: "src, content, srcset, data-src", // Lazy images attribute not now
-    verbose: false
+    verbose: true
   });
 
   // Apply performance attributes to copied local images

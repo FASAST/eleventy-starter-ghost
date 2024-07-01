@@ -662,8 +662,8 @@ h6 {
   font-weight: 700;
 }
 
-.content-body div.kg-card {
-  margin-top: 2rem;
+.content-body .kg-card {
+  margin-top: 3rem;
 }
 
 .content-body pre {
