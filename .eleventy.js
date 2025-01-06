@@ -4,6 +4,8 @@ const cleanCSS = require("clean-css");
 const fs = require("fs");
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const localImages = require("eleventy-plugin-local-images");
+const localVideos = require("eleventy-plugin-local-images");
+const localFiles = require("eleventy-plugin-local-images");
 const lazyImages = require("eleventy-plugin-lazyimages");
 const ghostContentAPI = require("@tryghost/content-api");
 
@@ -29,12 +31,13 @@ module.exports = function (config) {
   config.addPlugin(pluginRSS);
 
   // Copy images over from Ghost changes to relative pathname
+  // TODO video poster, internal links and ref on links
   config.addPlugin(localImages, {
     distPath: "dist",
-    assetPath: "/assets/images",
+    assetPath: "/assets",
     selector:
-      "img, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
-    attribute: "src, content, srcset, data-src", // Lazy images attribute not now
+      "img, video, a.kg-file-card-container, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
+    attribute: "src, href, content, srcset, data-src, style", // Lazy images attribute not now
     verbose: true
   });
 
