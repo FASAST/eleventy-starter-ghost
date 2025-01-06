@@ -4,15 +4,63 @@
   <subtitle>Fleet actions in deep space</subtitle>
   <link href="http://localhost:8080/feed.xml" rel="self"/>
   <link href="http://localhost:8080"/>
-  <updated>2025-01-06T23:33:46.000+00:00</updated>
+  <updated>2025-01-06T23:56:14.000+00:00</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Starship Combat Games</name>
   </author>
   <entry>
+    <title>TODO</title>
+    <link href="http://localhost:8080/todo/"/>
+    <updated>2025-01-06T23:56:14.000+00:00</updated>
+    <id>http://localhost:8080/todo/</id>
+    <content type="html">&lt;p&gt;List of final fixes before basic system works&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;avatar author not round&lt;/li&gt;
+&lt;li&gt;regular images not centred&lt;/li&gt;
+&lt;li&gt;image width settings ignored&lt;/li&gt;
+&lt;li&gt;urls in embedded css unchanged from ghost system (ignore)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next steps&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;tags for genres&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pages by genre&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;navigation design&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;top level&lt;/li&gt;
+&lt;li&gt;genres&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;visual design&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;typography&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;style tweaks&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[ ] to do list&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[x] done&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Write the introduction&lt;/li&gt;
+&lt;li&gt;[x] Draft the body&lt;/li&gt;
+&lt;li&gt;[ ] Revise the conclusion&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
     <title>Links test</title>
     <link href="http://localhost:8080/links-test/"/>
-    <updated>2025-01-06T23:33:46.000+00:00</updated>
+    <updated>2025-01-06T23:47:03.000+00:00</updated>
     <id>http://localhost:8080/links-test/</id>
     <content type="html">&lt;p&gt;Relative links text &lt;a href=&quot;/about&quot; rel=&quot;noreferrer&quot;&gt;about&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Second link &lt;a href=&quot;/test&quot; rel=&quot;noreferrer&quot;&gt;test&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Third link &lt;a href=&quot;/all-cards-test&quot; rel=&quot;noreferrer&quot;&gt;all cards test&lt;/a&gt;&lt;/p&gt;&lt;figure class=&quot;kg-card kg-image-card&quot;&gt;&lt;a href=&quot;/test&quot;&gt;&lt;img src=&quot;/content/images/2025/01/FT2cover.jpg&quot; class=&quot;kg-image&quot; alt=&quot;&quot; loading=&quot;lazy&quot; width=&quot;180&quot; height=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;</content>
   </entry>
