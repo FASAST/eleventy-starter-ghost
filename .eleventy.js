@@ -4,8 +4,6 @@ const cleanCSS = require("clean-css");
 const fs = require("fs");
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const localImages = require("eleventy-plugin-local-images");
-const localVideos = require("eleventy-plugin-local-images");
-const localFiles = require("eleventy-plugin-local-images");
 const lazyImages = require("eleventy-plugin-lazyimages");
 const ghostContentAPI = require("@tryghost/content-api");
 
@@ -36,8 +34,8 @@ module.exports = function (config) {
     distPath: "dist",
     assetPath: "/assets",
     selector:
-      "img, video, a.kg-file-card-container, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
-    attribute: "src, href, content, srcset, data-src, style", // Lazy images attribute not now
+      "img, video, figure, a.kg-file-card-container, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
+    attribute: "src, href, content, srcset, data-src, style, data-kg-thumbnail", // Lazy images attribute not now
     verbose: true
   });
 
@@ -47,6 +45,12 @@ module.exports = function (config) {
     transformImgPath: (src) => {
       return "dist" + src;
     }
+  });
+
+  // final transform to strip ghost links
+  // does not work for embedded css URLs
+  config.addTransform("stripghost", function (content) {
+    return content.replaceAll(process.env.GHOST_API_URL, "");
   });
 
   // Inline CSS

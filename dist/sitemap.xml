@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>http://localhost:8080/test/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:8080/about/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
@@ -28,6 +33,11 @@
   
   <url>
     <loc>http://localhost:8080/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/links-test/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
