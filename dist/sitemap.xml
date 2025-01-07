@@ -72,7 +72,17 @@
   </url>
   
   <url>
+    <loc>http://localhost:8080/tag/admin/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:8080/tag/news/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/tag/star-trek/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
 </urlset>
