@@ -30,9 +30,8 @@ what's here to work the way you'd like it to.
   --color-white: #ffffff;
 
   /* Fonts */
-  --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   --font-serif: Georgia, Times, serif;
   --font-mono: Menlo, Courier, monospace;
   --font-light: 100;
@@ -316,8 +315,8 @@ html {
 body {
   overflow-x: hidden;
   color: #3c484e;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6em;
   font-weight: 400;
@@ -534,7 +533,7 @@ h6 {
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 4vw;
+  padding: 0 1.5rem;
 }
 
 .content {
@@ -877,7 +876,9 @@ h6 {
 
 .post-card-avatar .author-profile-image {
   display: block;
-  width: 100%;
+
+  width: 3rem;
+  height: 3rem;
   background: var(--color-secondary);
   border-radius: 100%;
   object-fit: cover;
@@ -1192,6 +1193,22 @@ h6 {
 .kg-image-card.kg-width-wide + .kg-gallery-card,
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
   margin: -2.25em 0 3em;
+}
+
+figure.kg-image-card {
+  /* needs auto to centre */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure.kg-image-card.kg-width-wide {
+  /* wide images */
+  border: 0;
+}
+
+figure.kg-image-card.kg-width-full {
+  /* full with images */
+  border: 0;
 }
 
 .kg-embed-card .twitter-tweet {

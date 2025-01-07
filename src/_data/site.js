@@ -19,7 +19,9 @@ module.exports = async function () {
       console.error(err);
     });
 
-  if (process.env.SITE_URL) siteData.url = process.env.SITE_URL;
+  //if (process.env.SITE_URL) siteData.url = process.env.SITE_URL;
+  if (process.env.DEPLOY_URL) siteData.url = process.env.DEPLOY_URL;
+  siteData.cover_image = "/assets/theme/starfield.png";
 
   return siteData;
 };
