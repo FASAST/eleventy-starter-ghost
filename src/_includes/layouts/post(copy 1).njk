@@ -1,9 +1,16 @@
-{% extends 'layouts/common.njk' %}
+{% extends 'layouts/default.njk' %}
 <!-- post template -->
 
-
-<!-- need element title -->
 {% set title = post.title %}
+
+{%- block cssx -%}
+  <!-- extra css here -->
+  {% set cardcss %}{% include "css/cards.min.css" %}{% endset %}
+    <style>{{ cardcss | cssmin | safe }}</style>
+
+  {% set css %}{% include "css/photoswipe.css" %}{% endset %}
+    <style>{{ css | cssmin | safe }}</style>
+{%- endblock -%}
 
 
 {% block content %}
@@ -48,4 +55,49 @@
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="{{ site.lang }}">
     <meta property="article:author" content="{{ site.url }}">
+{%- endblock -%}
+
+{%- block scripts -%}
+    <!-- scripts needed -->
+
+    <!-- cards start -->
+    {% set libjs %}{% include "js/cards.min.js" %}{% endset %}
+    <script>{{ libjs | safe }}</script>
+    <!-- cards end -->
+
+    <!-- video reframer start -->
+    {% set libjs %}{% include "js/lib/reframe.js" %}{% endset %}
+    <script>{{ libjs | safe }}</script> 
+    <!-- reframer end -->
+
+    <!-- images loaded start -->
+    {% set libjs %}{% include "js/lib/imagesloaded.pkgd.js" %}{% endset %}
+    <script>{{ libjs | safe }}</script> 
+    <!-- images loaded end -->
+
+    <!-- Photoswipe start -->
+    {% set libjs %}{% include "js/lib/photoswipe.js" %}{% endset %}
+    <script>{{ libjs | safe }}</script> 
+    <!-- Photoswipe end -->
+
+    <!-- Photoswipe UI start -->
+    {% set libjs %}{% include "js/lib/photoswipe-ui-defaults.js" %}{% endset %}
+    <script>{{ libjs | safe }}</script> 
+    <!-- Photoswipe UI end -->
+
+    <!-- lightbox start -->  
+    {% set lightboxjs %}{% include "js/lightbox.js" %}{% endset %}
+    <script>{{ lightboxjs | safe }}</script> 
+    <!-- lightbox end -->
+
+    <!-- main loader start -->  
+    {% set mainjs %}{% include "js/main.js" %}{% endset %}
+    <script>{{ mainjs | safe }}</script> 
+    <!-- main end -->
+    
+  {%- endblock -%}     
+
+{%- block lightbox -%}
+  <!-- lightbox include here -->
+  {% include "partials/lightbox.njk" %}
 {%- endblock -%}

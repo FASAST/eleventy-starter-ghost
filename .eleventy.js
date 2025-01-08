@@ -36,16 +36,18 @@ module.exports = function (config) {
     selector:
       "img, video, figure, a.kg-file-card-container, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
     attribute: "src, href, content, srcset, data-src, style, data-kg-thumbnail", // Lazy images attribute not now
-    verbose: true
+    verbose: false
   });
 
   // Apply performance attributes to copied local images
+  /* disable to debug
   config.addPlugin(lazyImages, {
     cacheFile: "",
     transformImgPath: (src) => {
       return "dist" + src;
     }
   });
+  */
 
   // final transform to strip ghost links
   // does not work for embedded css URLs

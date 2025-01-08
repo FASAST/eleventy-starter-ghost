@@ -6,7 +6,10 @@
 {% block content %}
     <header class="tag-header">
         <h1>{{ tag.name }}</h1>
-        <p>{{ content | safe }}</p>
+        <div class="tag-description">
+          <img src="{{ tag.feature_image }}">
+          <p>{{ content | safe }}</p>
+        </div>
     </header>
     <section class="post-feed">
         {% if tag.posts %}

@@ -4,28 +4,44 @@
   <subtitle>Fleet actions in deep space</subtitle>
   <link href="http://starshipcombatgames.netlify.app/feed.xml" rel="self"/>
   <link href="http://starshipcombatgames.netlify.app"/>
-  <updated>2025-01-07T00:04:50.000+00:00</updated>
+  <updated>2025-01-08T00:04:40.000+00:00</updated>
   <id>http://starshipcombatgames.netlify.app/</id>
   <author>
     <name>Starship Combat Games</name>
   </author>
   <entry>
+    <title>FASA Star Trek Starship Combat Simulator</title>
+    <link href="http://starshipcombatgames.netlify.app/fasa-star-trek-starship-combat-simulator/"/>
+    <updated>2025-01-08T00:04:40.000+00:00</updated>
+    <id>http://starshipcombatgames.netlify.app/fasa-star-trek-starship-combat-simulator/</id>
+    <content type="html">&lt;figure class=&quot;kg-card kg-image-card&quot;&gt;&lt;img src=&quot;/content/images/2025/01/Screenshot-2025-01-07-at-23.56.10.png&quot; class=&quot;kg-image&quot; alt=&quot;&quot; loading=&quot;lazy&quot; width=&quot;1036&quot; height=&quot;1358&quot; srcset=&quot;/content/images/size/w600/2025/01/Screenshot-2025-01-07-at-23.56.10.png 600w, /content/images/size/w1000/2025/01/Screenshot-2025-01-07-at-23.56.10.png 1000w, /content/images/2025/01/Screenshot-2025-01-07-at-23.56.10.png 1036w&quot; sizes=&quot;(min-width: 720px) 720px&quot; /&gt;&lt;/figure&gt;</content>
+  </entry>
+  <entry>
+    <title>Second Edition</title>
+    <link href="http://starshipcombatgames.netlify.app/full-thrust/"/>
+    <updated>2025-01-07T23:51:40.000+00:00</updated>
+    <id>http://starshipcombatgames.netlify.app/full-thrust/</id>
+    <content type="html">&lt;p&gt;Published in 1990&lt;/p&gt;&lt;figure class=&quot;kg-card kg-image-card&quot;&gt;&lt;img src=&quot;/content/images/2025/01/FT2cover-1.jpg&quot; class=&quot;kg-image&quot; alt=&quot;&quot; loading=&quot;lazy&quot; width=&quot;180&quot; height=&quot;250&quot; /&gt;&lt;/figure&gt;</content>
+  </entry>
+  <entry>
     <title>TODO</title>
     <link href="http://starshipcombatgames.netlify.app/todo/"/>
-    <updated>2025-01-07T00:04:50.000+00:00</updated>
+    <updated>2025-01-08T18:55:14.000+00:00</updated>
     <id>http://starshipcombatgames.netlify.app/todo/</id>
     <content type="html">&lt;p&gt;List of final fixes before basic system works&lt;/p&gt;&lt;h3 id=&quot;immediate&quot;&gt;Immediate&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;avatar author not round&lt;/li&gt;
-&lt;li&gt;regular images not centred&lt;/li&gt;
-&lt;li&gt;image width settings ignored&lt;/li&gt;
-&lt;li&gt;urls in embedded css unchanged from ghost system (ignore)&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;avatar author not round&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;regular images not centred&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;image width settings ignored&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;urls in embedded css unchanged from ghost system (ignore)&lt;/s&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;next-steps&quot;&gt;Next steps&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;tags for genres&lt;/li&gt;
-&lt;li&gt;pages by genre&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;cards broken in pages&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;tags for genres&lt;/s&gt;&lt;/li&gt;
+&lt;li&gt;&lt;s&gt;pages by genre&lt;/s&gt;&lt;/li&gt;
 &lt;li&gt;navigation design
 &lt;ul&gt;
 &lt;li&gt;top level&lt;/li&gt;
+&lt;li&gt;mobile&lt;/li&gt;
 &lt;li&gt;genres&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

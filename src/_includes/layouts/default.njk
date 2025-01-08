@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- default template -->
+
 <html lang="{{ site.lang }}" class="no-js">
   <head>
     <title>
@@ -55,7 +57,7 @@
     <style>:root{ --ghost-accent-color: {{ site.accent_color }} }</style>
     
     {%- block cssx -%}
-    <!-- no extra css required -->
+    <!-- extra css required -->
     {%- endblock -%}
     
     <script>document.documentElement.classList.remove('no-js');</script>
@@ -85,7 +87,7 @@
     </div>
       
     {%- block lightbox -%}
-      <!-- lightbox code not needed -->
+      <!-- lightbox code here -->
     {%- endblock -%}
       
       

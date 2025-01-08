@@ -12,7 +12,7 @@
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/test/</loc>
+    <loc>http://starshipcombatgames.netlify.app/games/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
@@ -33,6 +33,16 @@
   
   <url>
     <loc>http://starshipcombatgames.netlify.app/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://starshipcombatgames.netlify.app/fasa-star-trek-starship-combat-simulator/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://starshipcombatgames.netlify.app/full-thrust/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
@@ -73,6 +83,11 @@
   
   <url>
     <loc>http://starshipcombatgames.netlify.app/tag/admin/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://starshipcombatgames.netlify.app/tag/full-thrust/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
