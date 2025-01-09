@@ -892,8 +892,8 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .tag-header {
-  max-width: 690px;
-  margin: 0 0 4vw;
+  max-width: 720px;
+  margin: 2vw auto 4vw auto;
 }
 
 .tag-header h1 {
@@ -907,6 +907,19 @@ h6 {
   line-height: 1.3em;
 }
 
+.tag-description {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.tag-item {
+  width: 50%;
+}
+
 @media (max-width: 500px) {
   .tag-header {
     border-bottom: var(--color-bg) 1px solid;
@@ -914,6 +927,12 @@ h6 {
   }
   .tag-header p {
     font-size: 1.7rem;
+  }
+  .tag-description {
+    flex-wrap: wrap;
+  }
+  .tag-item {
+    width: 100%;
   }
 }
 
