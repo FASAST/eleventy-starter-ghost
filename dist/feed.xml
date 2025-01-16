@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Starship Combat Games</title>
+  <title>Space Gamer</title>
   <subtitle>Fleet actions in deep space</subtitle>
   <link href="http://starshipcombatgames.netlify.app/feed.xml" rel="self"/>
   <link href="http://starshipcombatgames.netlify.app"/>
   <updated>2025-01-09T00:03:40.000+00:00</updated>
   <id>http://starshipcombatgames.netlify.app/</id>
   <author>
-    <name>Starship Combat Games</name>
+    <name>Space Gamer</name>
   </author>
   <entry>
     <title>FASA Star Trek Starship Combat Simulator</title>
