@@ -477,12 +477,12 @@ h6 {
 
 h1 {
   margin: 0 0 0.5rem 0;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3.4rem;
   }
 }
 
@@ -657,7 +657,7 @@ h6 {
 }
 @media (max-width: 500px) {
   .content-title {
-    margin: 0.8em auto;
+    margin: 0.8em 0;
     font-size: 3.4rem;
   }
   .content {
