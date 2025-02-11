@@ -5,12 +5,17 @@
 
 {% block content %}
   <header class="tag-header">
-    <h1>{{ tag.name }}</h1>
     <div class="tag-description">
-      <img class="tag-item" src="{{ tag.feature_image }}">
+      <h1>{{ tag.name }}</h1>
       <p class="tag-item">{{ content | safe }}</p>
     </div>
+    {% if tag.feature_image %}
+      <div class="tag-image">
+        <img class="tag-item" src="{{ tag.feature_image }}">
+      </div>
+    {% endif %}
   </header>
+
   <section class="post-feed">
     {% if tag.posts %}
       {% for post in tag.posts %}

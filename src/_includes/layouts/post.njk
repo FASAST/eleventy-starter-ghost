@@ -8,13 +8,23 @@
 
 {% block content %}
   <article class="content">
+    {% if post.tags %}
+      {% for tag in post.tags %}
+        <p class="content-tag">{{ tag.name }}</p>
+      {% endfor %}
+    {% endif %}
+    
+    <h1 class="content-title">{{ title }}</h1>
+    <p class="content-excerpt">{{ post.excerpt }}</p>
     {% if post.feature_image %}
       <figure class="post-feature-image">
-          <img src="{{ post.feature_image }}" alt="{{ title }}">
+        <img src="{{ post.feature_image }}" alt="{{ post.feature_image_alt }}">
+        {% if post.feature_image_caption %}
+          <figcaption>{{ post.feature_image_caption | safe }}</figcaption>
+        {% endif %}
       </figure>
     {% endif %}
     <section class="post-full-content">
-      <h1 class="content-title">{{ title }}</h1>
       <section class="content-body load-external-scripts">
         {{ content | safe }}
       </section>
