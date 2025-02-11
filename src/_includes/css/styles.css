@@ -158,7 +158,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
   content: none;
 }
 table {
@@ -255,7 +254,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
-
+  appearance: button;
   -webkit-appearance: button;
 }
 button[disabled],
@@ -284,7 +283,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="search"] {
   box-sizing: content-box;
-
+  appearance: textfield;
   -webkit-appearance: textfield;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -332,9 +331,8 @@ body {
   text-rendering: optimizeLegibility;
   background: #fff;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
 }
 
 ::selection {
@@ -538,47 +536,12 @@ h6 {
 }
 
 /* all content container override for full width bleed */
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  /* padding: 0 1.5rem; */
-}
-
-/* bad structure have to set explicit width on all non bleed elements */
-.site-mast,
-.site-nav,
-.post-feed,
-.post-feature-image,
-.content-title,
-.site-foot-nav {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.content {
-  margin: 0 auto;
-  font-size: 2rem;
-  line-height: 1.7em;
-}
-
+.container,
+.site-head,
+.site-foot,
+.content,
+.post-full-content,
 .content-body {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-serif);
-}
-
-/*.post-full-content {
-  max-width: 720px;
-  margin: 0 auto;
-  background: #fff;
-}*/
-
-.post-full-content {
-  width: 100%;
-}
-
-.content-body {
-  width: 100%;
   --gap: max(4vmin, 20px);
   --main: min(var(--content-width, 720px), 100% - var(--gap) * 2);
   --full: minmax(var(--gap), 1fr);
@@ -589,17 +552,60 @@ h6 {
     [wide-end] var(--full) [full-end];
 }
 
-.content-body > * {
-  grid-column: main-start / main-end;
-}
-
-.kg-width-wide,
-.kg-content-wide > div {
+.container > *,
+.site-head > *,
+.site-foot > *,
+.content > *,
+.post-full-content > * {
   grid-column: wide-start / wide-end;
 }
 
-.kg-width-full {
+/* bad structure have to set explicit width on all non bleed elements 
+.site-mast,
+.site-nav,
+.post-feed,
+.post-feature-image,
+.content-title,
+.site-foot-nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+*/
+
+.content {
+  margin: 0 auto;
+  font-size: 2rem;
+  line-height: 1.7em;
+  width: 100%;
+}
+
+.content-body {
+  font-family: var(--font-serif);
+}
+
+/*.post-full-content {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+}*/
+
+.content-body > *,
+.content-title {
+  grid-column: main-start / main-end;
+}
+
+.content-body,
+.post-full-content,
+.kg-width-full,
+.content {
   grid-column: full-start / full-end;
+}
+
+.post-feature-image,
+.kg-width-wide,
+.kg-content-wide > div {
+  grid-column: wide-start / wide-end;
 }
 
 .kg-width-full img {
@@ -646,7 +652,7 @@ h6 {
 }
 
 .content-title {
-  margin: 0 auto 0.8em;
+  margin: 0 0 0.8em;
   font-size: 5rem;
 }
 @media (max-width: 500px) {
@@ -935,7 +941,7 @@ h6 {
 
   width: 3rem;
   height: 3rem;
-  background: var(--color-secondary);
+  background: none;
   border-radius: 100%;
   object-fit: cover;
 }
