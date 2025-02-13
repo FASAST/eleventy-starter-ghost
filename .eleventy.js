@@ -34,7 +34,7 @@ module.exports = function (config) {
     distPath: "dist",
     assetPath: "/assets",
     selector:
-      "img, video, figure, a.kg-file-card-container, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
+      "img, video, figure, link[rel='shortcut icon'], a.kg-file-card-container, meta[property='og:image'], meta[name='twitter:image'], meta[itemprop='image']",
     attribute: "src, href, content, srcset, data-src, style, data-kg-thumbnail", // Lazy images attribute not now
     verbose: false
   });
