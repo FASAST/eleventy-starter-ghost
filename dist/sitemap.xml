@@ -2,102 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/404.html</loc>
+    <loc>http://stargamer.netlify.app/404.html</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/author/christopher/</loc>
+    <loc>http://stargamer.netlify.app/author/star-gamer/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/games/</loc>
+    <loc>http://stargamer.netlify.app/games/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/about/</loc>
+    <loc>http://stargamer.netlify.app/about/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/_headers</loc>
+    <loc>http://stargamer.netlify.app/_headers</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/.htaccess</loc>
+    <loc>http://stargamer.netlify.app/.htaccess</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/</loc>
+    <loc>http://stargamer.netlify.app/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/fasa-star-trek-starship-combat-simulator/</loc>
+    <loc>http://stargamer.netlify.app/facebook/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/full-thrust/</loc>
+    <loc>http://stargamer.netlify.app/video-local/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/todo/</loc>
+    <loc>http://stargamer.netlify.app/fasa-star-trek-starship-combat-simulator/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/links-test/</loc>
+    <loc>http://stargamer.netlify.app/full-thrust/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/gallery/</loc>
+    <loc>http://stargamer.netlify.app/todo/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/all-cards-test/</loc>
+    <loc>http://stargamer.netlify.app/links-test/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/coming-soon/</loc>
+    <loc>http://stargamer.netlify.app/gallery/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/_redirects</loc>
+    <loc>http://stargamer.netlify.app/all-cards-test/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/robots.txt</loc>
+    <loc>http://stargamer.netlify.app/coming-soon/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/tag/admin/</loc>
+    <loc>http://stargamer.netlify.app/_redirects</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/tag/star-trek/</loc>
+    <loc>http://stargamer.netlify.app/robots.txt</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/tag/full-thrust/</loc>
+    <loc>http://stargamer.netlify.app/tag/admin/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://starshipcombatgames.netlify.app/tag/news/</loc>
+    <loc>http://stargamer.netlify.app/tag/star-trek/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/tag/full-thrust/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/tag/news/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
 </urlset>
