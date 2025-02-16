@@ -601,7 +601,7 @@ h6 {
 .content-tag {
   text-transform: uppercase;
   color: var(--ghost-accent-color);
-  margin-bottom: 1rem;
+  margin: 0;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -674,12 +674,12 @@ h6 {
 }
 
 .content-title {
-  margin: 0 0 1.6rem;
+  margin: 1rem 0 2rem 0;
   font-size: 5rem;
 }
 @media (max-width: 500px) {
   .content-title {
-    margin: 0.8em 0;
+    margin: 1rem 0;
     font-size: 3.4rem;
   }
   .content {
@@ -1027,7 +1027,8 @@ h6 {
     padding-bottom: 4vw;
     border-bottom: var(--color-bg) 1px solid;
   }
-  .tag-header p {
+  .tag-header p,
+  .content-excerpt {
     font-size: 1.7rem;
   }
   .tag-description {
