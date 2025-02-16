@@ -350,6 +350,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid var(--color-secondary);
+  opacity: 0.5;
 }
 
 audio,
@@ -617,6 +618,11 @@ h6 {
 .kg-width-wide,
 .kg-content-wide > div {
   grid-column: wide-start / wide-end;
+}
+
+/* stack full width headers */
+.content-body .kg-card.kg-width-full {
+  margin: 0;
 }
 
 .kg-width-full img {
@@ -1110,12 +1116,18 @@ h6 {
 .pagination a {
   display: inline-block;
   padding: 10px 15px;
-  border: var(--color-border) 1px solid;
+  border: var(--ghost-accent-color) 1px solid;
   color: var(--color-secondary);
   text-decoration: none;
   font-size: 1.4rem;
   line-height: 1em;
   border-radius: var(--radius);
+}
+
+.pagination a:active,
+.pagination a:hover {
+  background: var(--ghost-accent-color);
+  color: var(--color-primary);
 }
 
 .pagination-location {
@@ -1130,7 +1142,7 @@ h6 {
 
 .pagination span {
   color: var(--color-secondary);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /* Footer

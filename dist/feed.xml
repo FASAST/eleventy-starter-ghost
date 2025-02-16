@@ -4,11 +4,64 @@
   <subtitle>Fleet actions in deep space</subtitle>
   <link href="http://stargamer.netlify.app/feed.xml" rel="self"/>
   <link href="http://stargamer.netlify.app"/>
-  <updated>2025-02-15T23:05:36.000+00:00</updated>
+  <updated>2025-02-16T23:11:33.000+00:00</updated>
   <id>http://stargamer.netlify.app/</id>
   <author>
     <name>Star Gamer</name>
   </author>
+  <entry>
+    <title>Headers</title>
+    <link href="http://stargamer.netlify.app/headers/"/>
+    <updated>2025-02-16T23:11:33.000+00:00</updated>
+    <id>http://stargamer.netlify.app/headers/</id>
+    <content type="html">&lt;div class=&quot;kg-card kg-header-card kg-v2 kg-width-full kg-content-wide &quot; data-background-color=&quot;#000000&quot;&gt;
+            
+            &lt;picture&gt;&lt;img class=&quot;kg-header-card-image&quot; src=&quot;/content/images/2025/02/FT500NSLnewGroup.jpg&quot; loading=&quot;lazy&quot; alt=&quot;&quot; /&gt;&lt;/picture&gt;
+        
+            &lt;div class=&quot;kg-header-card-content&quot;&gt;
+                
+                &lt;div class=&quot;kg-header-card-text kg-align-center&quot;&gt;
+                    &lt;h2 id=&quot;full-width-heading&quot; class=&quot;kg-header-card-heading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Full width Heading&lt;/span&gt;&lt;/h2&gt;
+                    &lt;p id=&quot;something-in-the-subheading&quot; class=&quot;kg-header-card-subheading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Something in the subheading&lt;/span&gt;&lt;/p&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;div class=&quot;kg-card kg-header-card kg-v2 kg-layout-split kg-width-full &quot; style=&quot;background-color: #000000;&quot; data-background-color=&quot;#000000&quot;&gt;
+            
+            &lt;div class=&quot;kg-header-card-content&quot;&gt;
+                
+            &lt;picture&gt;&lt;img class=&quot;kg-header-card-image&quot; src=&quot;/content/images/2025/02/FullThrust.png&quot; srcset=&quot;/content/images/size/w600/2025/02/FullThrust.png 600w, /content/images/size/w1000/2025/02/FullThrust.png 1000w, /content/images/2025/02/FullThrust.png 1080w&quot; loading=&quot;lazy&quot; alt=&quot;&quot; /&gt;&lt;/picture&gt;
+        
+                &lt;div class=&quot;kg-header-card-text kg-align-center&quot;&gt;
+                    &lt;h2 id=&quot;split-action&quot; class=&quot;kg-header-card-heading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Split action&lt;/span&gt;&lt;/h2&gt;
+                    &lt;p id=&quot;subhead&quot; class=&quot;kg-header-card-subheading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Subhead&lt;/span&gt;&lt;/p&gt;
+                    &lt;a href=&quot;/tag/full-thrust&quot; class=&quot;kg-header-card-button kg-style-accent&quot; style=&quot;color: #FFFFFF;&quot; data-button-color=&quot;accent&quot; data-button-text-color=&quot;#FFFFFF&quot;&gt;Action&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;div class=&quot;kg-card kg-header-card kg-v2 kg-width-wide &quot; style=&quot;background-color: #000000;&quot; data-background-color=&quot;#000000&quot;&gt;
+            
+            &lt;div class=&quot;kg-header-card-content&quot;&gt;
+                
+                &lt;div class=&quot;kg-header-card-text kg-align-center&quot;&gt;
+                    &lt;h2 id=&quot;block-header&quot; class=&quot;kg-header-card-heading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Block header&lt;/span&gt;&lt;/h2&gt;
+                    &lt;p id=&quot;wide&quot; class=&quot;kg-header-card-subheading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Wide&lt;/span&gt;&lt;/p&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;div class=&quot;kg-card kg-header-card kg-v2 kg-width-regular &quot; data-background-color=&quot;#000000&quot;&gt;
+            
+            &lt;picture&gt;&lt;img class=&quot;kg-header-card-image&quot; src=&quot;/content/images/2025/02/GM4UVoWWEAAXM5P.jpeg&quot; srcset=&quot;/content/images/size/w600/2025/02/GM4UVoWWEAAXM5P.jpeg 600w, /content/images/size/w1000/2025/02/GM4UVoWWEAAXM5P.jpeg 1000w, /content/images/size/w1600/2025/02/GM4UVoWWEAAXM5P.jpeg 1600w, /content/images/2025/02/GM4UVoWWEAAXM5P.jpeg 2000w&quot; loading=&quot;lazy&quot; alt=&quot;&quot; /&gt;&lt;/picture&gt;
+        
+            &lt;div class=&quot;kg-header-card-content&quot;&gt;
+                
+                &lt;div class=&quot;kg-header-card-text &quot;&gt;
+                    &lt;h2 id=&quot;main-header&quot; class=&quot;kg-header-card-heading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;a href=&quot;/tag/star-trek&quot; rel=&quot;noreferrer&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Main header&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+                    &lt;p id=&quot;main&quot; class=&quot;kg-header-card-subheading&quot; style=&quot;color: #FFFFFF;&quot; data-text-color=&quot;#FFFFFF&quot;&gt;&lt;a href=&quot;/tag/full-thrust&quot; rel=&quot;noreferrer&quot;&gt;&lt;span style=&quot;white-space: pre-wrap;&quot;&gt;Main&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+                    
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Facebook</title>
     <link href="http://stargamer.netlify.app/facebook/"/>
