@@ -921,20 +921,25 @@ h6 {
 }
 
 .post-card-tags {
-  margin: 0 0 5px 0;
+  margin: 0;
   font-size: 1.4rem;
   line-height: 1.15em;
   color: var(--color-secondary);
+  text-transform: uppercase;
 }
 
 .post-card-title {
-  margin: 0 0 10px 0;
+  margin: 0 0 0.5rem 0;
   padding: 0;
 }
 
 .post-card-excerpt {
   font-size: 1.6rem;
   line-height: 1.55em;
+}
+
+.post-card-excerpt p {
+  margin: 0;
 }
 
 .post-card-image {
@@ -950,7 +955,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0 0 0;
+  margin: 0 0 0.5rem 0;
   color: var(--color-secondary);
 }
 
