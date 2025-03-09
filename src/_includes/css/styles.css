@@ -37,6 +37,7 @@ what's here to work the way you'd like it to.
   --font-mono: Menlo, Courier, monospace;
   --font-light: 100;
   --font-normal: 400;
+  --font-medium: 600;
   --font-bold: 700;
   --font-heavy: 800;
   --line-height: 1.5em;
@@ -44,13 +45,36 @@ what's here to work the way you'd like it to.
 
   /* Sizes */
   --height: 4rem;
-  --margin: 2rem;
+  --margin-medium: 1.6rem;
+  --margin-large: 2.4rem;
   --radius: 0.6rem;
   --max-width: 1120px;
+  
+  /* desktop text sizes */
+  --text-huge: 5rem;   /* 50 */
+  --text-xlarge: 2.4rem;  /* 24 */
+  --text-large: 2rem; /* 20 */
+  --text-medium: 1.6rem;    /* 16 */
+  --text-small: 1.4rem; /* 14 */
+  --text-tiny: 1.2rem;   /* 12 */
+  --text-xtiny: 1.3rem;  /* 11 */
 
   /* Ghost bits fall back */
 
   --ghost-accent-color: #ff1a75;
+}
+
+@media (max-width: 500px) {
+  :root {
+    /* mobile text sizes */
+    --text-huge: 5rem;   /* 51 */
+    --text-xlarge: 2.4rem;  /* 24 */
+    --text-large: 1.8rem; /* 18 */
+    --text-medium: 1.6rem;    /* 16 */
+    --text-small: 1.4rem; /* 14 */
+    --text-tiny: 1.2rem;   /* 12 */
+    --text-xtiny: 1.1rem;  /* 11 */
+  }
 }
 
 @media (max-width: 1119px) {
@@ -200,8 +224,8 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin: 0.67em 0;
-  font-size: 2em;
+  margin: 0.5rem 0;
+  font-size: var(--text-large);
 }
 small {
   font-size: 80%;
@@ -214,10 +238,10 @@ sup {
   vertical-align: baseline;
 }
 sup {
-  top: -0.5em;
+  top: -0.5rem;
 }
 sub {
-  bottom: -0.25em;
+  bottom: -0.25rem;
 }
 img {
   border: 0;
@@ -233,7 +257,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
 }
 button,
 input,
@@ -315,20 +339,20 @@ th {
 html {
   overflow-x: hidden;
   overflow-y: scroll;
-  font-size: 62.5%;
+  font-size: 62.5%;  /* sets rem to pixels */
   background: var(--color-base);
-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
   overflow-x: hidden;
   color: var(--color-primary);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", 
+    Roboto, Oxygen, Ubuntu, Cantarell, 
+    "Open Sans","Helvetica Neue", sans-serif;
+  font-size: var(--text-medium);
   line-height: var(--line-height);
-  font-weight: 400;
+  font-weight: var(--font-normal);
   font-style: normal;
   letter-spacing: 0;
   text-rendering: optimizeLegibility;
@@ -347,7 +371,7 @@ hr {
   position: relative;
   display: block;
   width: 100%;
-  margin: 1.8em 0 2.4em;
+  margin: 1.8rem 0 2.4rem;
   padding: 0;
   height: 1px;
   border: 0;
@@ -379,7 +403,7 @@ ul,
 ol,
 dl,
 blockquote {
-  margin: 0 0 1.5em 0;
+  margin: 0 0 var(--margin-medium) 0;
 }
 
 ol,
@@ -392,7 +416,7 @@ ol ol,
 ul ul,
 ul ol,
 ol ul {
-  margin: 0.5em 0 1em;
+  margin: var(--margin-medium) 0;
 }
 
 ul {
@@ -413,9 +437,13 @@ ol {
 }
 
 li {
-  margin: 0.5rem 0;
+  margin: 0 0 var(--margin-medium);
   padding-left: 0.3rem;
   line-height: var(--line-height);
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 li::marker {
@@ -434,7 +462,7 @@ dt {
   float: left;
   margin: 0 20px 0 0;
   width: 120px;
-  font-weight: 500;
+  font-weight: var(--font-medium);
   text-align: right;
 }
 
@@ -491,14 +519,14 @@ h6 {
   margin-top: 0;
   color: var(--color-primary);
   line-height: 1.15;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-rendering: optimizeLegibility;
 }
 
 h1 {
   margin: 0 0 0.5rem 0;
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 @media (max-width: 500px) {
   h1 {
@@ -519,7 +547,7 @@ h2 {
 h3 {
   margin: 1.5rem 0 0.5rem 0;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 @media (max-width: 500px) {
   h3 {
@@ -530,19 +558,19 @@ h3 {
 h4 {
   margin: 1.5rem 0 0.5rem 0;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 
 h5 {
   margin: 1.5rem 0 0.5rem 0;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 
 h6 {
   margin: 1.5rem 0 0.5rem 0;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 
 /* Layout
@@ -622,7 +650,7 @@ h6 {
   color: var(--ghost-accent-color);
   margin: 0;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: var(--font-medium);
 }
 
 .content-body,
@@ -638,10 +666,7 @@ h6 {
   grid-column: wide-start / wide-end;
 }
 
-/* stack full width headers */
-.content-body .kg-card.kg-width-full {
-  margin: 0;
-}
+
 
 .kg-width-full img {
   width: 100%;
@@ -688,7 +713,7 @@ h6 {
 .content-body h1 {
   margin: 1em 0 0.5em 0;
   font-size: 3.4rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 @media (max-width: 500px) {
   .content-body h1 {
@@ -697,7 +722,7 @@ h6 {
 }
 
 .content-title {
-  margin: 1rem 0 2rem 0;
+  margin: var(--margin-medium) 0 var(--margin-large) 0;
   font-size: 5rem;
 }
 @media (max-width: 500px) {
@@ -713,7 +738,7 @@ h6 {
 .content-body h2 {
   margin: 0.8em 0 0.4em 0;
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 @media (max-width: 500px) {
   .content-body h2 {
@@ -724,7 +749,7 @@ h6 {
 .content-body h3 {
   margin: 0.5em 0 0.2em 0;
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 @media (max-width: 500px) {
   .content-body h3 {
@@ -735,7 +760,7 @@ h6 {
 .content-body h4 {
   margin: 0.5em 0 0.2em 0;
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 @media (max-width: 500px) {
   .content-body h4 {
@@ -759,13 +784,13 @@ h6 {
 .content-body h6 {
   margin: 0.5em 0 0.2em 0;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .content-body figure {
   margin: 0.4em 0 1.6em;
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .content-body .kg-card {
@@ -798,16 +823,18 @@ h6 {
 .site-nav-item {
   display: inline-block;
   padding: 5px 10px;
-  color: var(--color-primary);
-  font-weight: 400;
+  color: var(--color-secondary);
+  font-weight: var(--font-normal);
+  font-size: var(--text-small);
 }
 
 .site-nav-item[aria-current="page"] {
-  font-weight: 700;
+  color: var(--color-primary);
 }
 
 .site-nav-item:hover {
   text-decoration: none;
+  color: var(--color-primary);
   opacity: 1;
 }
 
@@ -1036,8 +1063,9 @@ h6 {
 .content-excerpt {
   /* margin: 0; */
   color: var(--color-secondary);
-  font-size: 2.2rem;
+  font-size: var(--text-large);
   line-height: 1.3em;
+  margin-bottom: var(--margin-large);
 }
 
 .tag-description {
@@ -1052,7 +1080,7 @@ h6 {
   }
   .tag-header p,
   .content-excerpt {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .tag-description {
     flex-wrap: wrap;
@@ -1237,7 +1265,7 @@ h6 {
   color: color(var(--color-secondary) l(-30%));
   font-size: 1.6rem;
   line-height: 1.5em;
-  font-weight: 600;
+  font-weight: var(--font-medium);
   transition: color 0.2s ease-in-out;
 }
 
@@ -1253,7 +1281,7 @@ h6 {
   color: color(var(--color-secondary) l(-10%));
   font-size: 1.5rem;
   line-height: 1.5em;
-  font-weight: 400;
+  font-weight: var(--font-normal);
 
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1283,7 +1311,7 @@ h6 {
   margin-top: 14px;
   color: color(var(--color-secondary) l(-10%));
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: var(--font-normal);
 }
 
 .kg-bookmark-icon {
@@ -1346,6 +1374,18 @@ h6 {
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
   margin: -2.25em 0 3em;
 }
+
+/* stack full width headers */
+/*
+.content-body .kg-card.kg-width-full {
+  margin: 0;
+}
+*/
+ .content-body > .kg-width-full + .kg-width-full:not(.kg-width-full.kg-card-hascaption + .kg-width-full) {
+    margin-top: 0;
+}
+
+
 
 figure.kg-image-card {
   /* needs auto to centre */
