@@ -92,12 +92,12 @@
   
     <div class="site-nav-right">
       
-        <a  class="site-nav-button" href="/miniatures/">
-            Miniatures
-        </a>
-      
         <a aria-current="page" class="site-nav-button" href="/games/">
             Games
+        </a>
+      
+        <a  class="site-nav-button" href="/miniatures/">
+            Miniatures
         </a>
       
         <a  class="site-nav-button" href="/about/">
@@ -204,6 +204,8 @@
 <p><img src="/assets/Z13mTmY-FT2cover.jpg" alt="FT2cover.jpg" loading="lazy"></p>
 <h4 id="full-thrust"><a href="/tag/full-thrust">Full Thrust</a></h4>
 <p>Fast play generic rules</p>
+<p><img src="/assets/Z13mTmY-FT2cover.jpg" alt="FT2cover.jpg" loading="lazy"><br>
+<a href="/tag/full-thrust">Full Thrust</a> Fast play generic rules</p>
 <div class="kg-card kg-toggle-card" data-kg-toggle-state="close">
             <div class="kg-toggle-heading">
                 <h4 class="kg-toggle-heading-text"><a href="/tag/full-thrust" rel="noreferrer"><span style="white-space: pre-wrap;">Full Thrust</span></a></h4>
@@ -213,7 +215,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="kg-toggle-content"><p><span style="white-space: pre-wrap;">These are only text </span><a href="/tag/full-thrust" rel="noreferrer"><span style="white-space: pre-wrap;">Fleet actions in deep space</span></a> <a href="/content/images/2025/02/ft-cover.png"><span style="white-space: pre-wrap;">/content/images/2025/02/ft-cover.png</span></a></p></div>
+            <div class="kg-toggle-content"><p><b><strong style="white-space: pre-wrap;">These</strong></b><span style="white-space: pre-wrap;"> are only text </span><a href="/tag/full-thrust" rel="noreferrer"><span style="white-space: pre-wrap;">Fleet actions in deep space</span></a> <a href="/content/images/2025/02/ft-cover.png"><span style="white-space: pre-wrap;">/content/images/2025/02/ft-cover.png</span></a></p></div>
         </div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close">
             <div class="kg-toggle-heading">
                 <h4 class="kg-toggle-heading-text"><a href="/tag/star-trek" rel="noreferrer"><span style="white-space: pre-wrap;">Star Trek</span></a></h4>
@@ -274,6 +276,18 @@
                     
                 </div>
             </div>
+        </div><div class="kg-card kg-header-card kg-v2 kg-width-regular " data-background-color="#000000">
+            
+            <picture><img class="kg-header-card-image" src="/assets/ZcV6dr-GMvcmTPX0AAsbxf.jpeg" loading="lazy" alt=""></picture>
+        
+            <div class="kg-header-card-content">
+                
+                <div class="kg-header-card-text ">
+                    <h2 id="star-trek" class="kg-header-card-heading" style="color: #FFFFFF;" data-text-color="#FFFFFF"><span style="white-space: pre-wrap;">Star Trek</span></h2>
+                    
+                    
+                </div>
+            </div>
         </div>
 
       </section>
@@ -299,12 +313,12 @@
     
       <div class="site-foot-nav-right">
         
-          <a   class="site-foot-nav-item" href="/miniatures/">
-            Miniatures
-          </a>
-        
           <a aria-current="page"  class="site-foot-nav-item" href="/games/">
             Games
+          </a>
+        
+          <a   class="site-foot-nav-item" href="/miniatures/">
+            Miniatures
           </a>
         
           <a   class="site-foot-nav-item" href="/about/">
@@ -5937,6 +5951,31 @@ function lightbox(trigger) {
   <!-- main loader start -->  
   
   <script>console.log("main.js");
+
+/* Fix video poster uses the data-kg-thumbnail value of the parent figure */
+(function () {
+  console.log("repostering ...");
+
+  // Get all video elements within figure elements
+  const videos = document.querySelectorAll("figure video");
+  console.log(videos);
+
+  videos.forEach((video) => {
+    // Get the parent figure element
+    const figure = video.parentElement.parentElement;
+
+    // Get the data attribute value from the figure (assuming data-background is the attribute name)
+    const backgroundUrl = figure.getAttribute('data-kg-thumbnail');
+    console.log(backgroundUrl);
+
+    // Check if the data attribute exists and has a value
+    if (backgroundUrl) {
+      // Set the background image style
+      video.style.backgroundImage = `url(${backgroundUrl})`;
+    }
+  });
+  
+})();
 
 /* Responsive video in post content */
 (function () {

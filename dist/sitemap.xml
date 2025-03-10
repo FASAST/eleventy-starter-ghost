@@ -12,12 +12,12 @@
   </url>
   
   <url>
-    <loc>http://stargamer.netlify.app/miniatures/</loc>
+    <loc>http://stargamer.netlify.app/games/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>http://stargamer.netlify.app/games/</loc>
+    <loc>http://stargamer.netlify.app/miniatures/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
@@ -43,6 +43,16 @@
   
   <url>
     <loc>http://stargamer.netlify.app/headers/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/embeds/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/video/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   

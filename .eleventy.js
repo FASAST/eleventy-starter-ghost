@@ -54,6 +54,7 @@ module.exports = function (config) {
   config.addTransform("stripghost", function (content) {
     return content.replaceAll(process.env.GHOST_API_URL, "");
   });
+  
 
   // Inline CSS
   config.addFilter("cssmin", (code) => {

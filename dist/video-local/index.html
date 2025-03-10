@@ -92,12 +92,12 @@
   
     <div class="site-nav-right">
       
-        <a  class="site-nav-button" href="/miniatures/">
-            Miniatures
-        </a>
-      
         <a  class="site-nav-button" href="/games/">
             Games
+        </a>
+      
+        <a  class="site-nav-button" href="/miniatures/">
+            Miniatures
         </a>
       
         <a  class="site-nav-button" href="/about/">
@@ -244,7 +244,7 @@
                     </div>
                 </div>
             </div>
-            <figcaption><p dir="ltr"><span style="white-space: pre-wrap;">Wide/Manual/No Thumb</span></p></figcaption>
+            <figcaption><p><span style="white-space: pre-wrap;">Wide/Manual/No Thumb</span></p></figcaption>
         </figure><figure class="kg-card kg-video-card kg-width-regular kg-card-hascaption" data-kg-thumbnail="/assets/DYH1c-more_002_thumb.jpg" data-kg-custom-thumbnail="">
             <div class="kg-video-container">
                 <video src="/assets/Z19pzyw-more_002.mp4" poster="https://img.spacergif.org/v1/1200x740/0a/spacer.png" width="1200" height="740" loop="" autoplay="" muted="" playsinline="" preload="metadata" style="background: transparent url('/content/media/2025/02/more_002_thumb.jpg') 50% 50% / cover no-repeat;"></video>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
             </div>
-            <figcaption><p dir="ltr"><span style="white-space: pre-wrap;">Main/Auto</span></p></figcaption>
+            <figcaption><p><span style="white-space: pre-wrap;">Main/Auto</span></p></figcaption>
         </figure><figure class="kg-card kg-video-card kg-width-wide kg-card-hascaption" data-kg-thumbnail="/assets/AhYP-privacy_002-1_thumb.jpg" data-kg-custom-thumbnail="">
             <div class="kg-video-container">
                 <video src="/assets/ZRJWyh-privacy_002-1.mp4" poster="https://img.spacergif.org/v1/1080x990/0a/spacer.png" width="1080" height="990" loop="" autoplay="" muted="" playsinline="" preload="metadata" style="background: transparent url('/content/media/2025/02/privacy_002-1_thumb.jpg') 50% 50% / cover no-repeat;"></video>
@@ -332,7 +332,7 @@
                     </div>
                 </div>
             </div>
-            <figcaption><p dir="ltr"><span style="white-space: pre-wrap;">Wide/Auto</span></p></figcaption>
+            <figcaption><p><span style="white-space: pre-wrap;">Wide/Auto</span></p></figcaption>
         </figure><figure class="kg-card kg-video-card kg-width-regular kg-card-hascaption" data-kg-thumbnail="/assets/Z27BzkA-more_002-1_thumb.jpg" data-kg-custom-thumbnail="/content/images/2025/02/TestVideoThumb.jpg">
             <div class="kg-video-container">
                 <video src="/assets/ZTPrCd-more_002-1.mp4" poster="https://img.spacergif.org/v1/1200x740/0a/spacer.png" width="1200" height="740" playsinline="" preload="metadata" style="background: transparent url('/content/images/2025/02/TestVideoThumb.jpg') 50% 50% / cover no-repeat;"></video>
@@ -376,7 +376,7 @@
                     </div>
                 </div>
             </div>
-            <figcaption><p dir="ltr"><span style="white-space: pre-wrap;">Main/Manual/Custom Thumb</span></p></figcaption>
+            <figcaption><p><span style="white-space: pre-wrap;">Main/Manual/Custom Thumb</span></p></figcaption>
         </figure>
 
       </section>
@@ -402,12 +402,12 @@
     
       <div class="site-foot-nav-right">
         
-          <a   class="site-foot-nav-item" href="/miniatures/">
-            Miniatures
-          </a>
-        
           <a   class="site-foot-nav-item" href="/games/">
             Games
+          </a>
+        
+          <a   class="site-foot-nav-item" href="/miniatures/">
+            Miniatures
           </a>
         
           <a   class="site-foot-nav-item" href="/about/">
@@ -6040,6 +6040,31 @@ function lightbox(trigger) {
   <!-- main loader start -->  
   
   <script>console.log("main.js");
+
+/* Fix video poster uses the data-kg-thumbnail value of the parent figure */
+(function () {
+  console.log("repostering ...");
+
+  // Get all video elements within figure elements
+  const videos = document.querySelectorAll("figure video");
+  console.log(videos);
+
+  videos.forEach((video) => {
+    // Get the parent figure element
+    const figure = video.parentElement.parentElement;
+
+    // Get the data attribute value from the figure (assuming data-background is the attribute name)
+    const backgroundUrl = figure.getAttribute('data-kg-thumbnail');
+    console.log(backgroundUrl);
+
+    // Check if the data attribute exists and has a value
+    if (backgroundUrl) {
+      // Set the background image style
+      video.style.backgroundImage = `url(${backgroundUrl})`;
+    }
+  });
+  
+})();
 
 /* Responsive video in post content */
 (function () {

@@ -92,12 +92,12 @@
   
     <div class="site-nav-right">
       
-        <a  class="site-nav-button" href="/miniatures/">
-            Miniatures
-        </a>
-      
         <a  class="site-nav-button" href="/games/">
             Games
+        </a>
+      
+        <a  class="site-nav-button" href="/miniatures/">
+            Miniatures
         </a>
       
         <a  class="site-nav-button" href="/about/">
@@ -209,16 +209,17 @@
 <li><s>cards broken in pages</s></li>
 <li><s>tags for genres</s></li>
 <li><s>pages by genre</s></li>
-<li>navigation design
+<li><s>navigation design</s>
 <ul>
-<li>top level</li>
-<li>mobile</li>
-<li>genres</li>
+<li><s>top level</s></li>
+<li><s>mobile</s></li>
+<li><s>genres</s></li>
 </ul>
 </li>
-<li>visual design</li>
+<li><s>visual design</s></li>
 <li>typography</li>
-<li>style tweaks</li>
+<li><s>style tweaks</s></li>
+<li>video poster images</li>
 </ul>
 
 
@@ -245,12 +246,12 @@
     
       <div class="site-foot-nav-right">
         
-          <a   class="site-foot-nav-item" href="/miniatures/">
-            Miniatures
-          </a>
-        
           <a   class="site-foot-nav-item" href="/games/">
             Games
+          </a>
+        
+          <a   class="site-foot-nav-item" href="/miniatures/">
+            Miniatures
           </a>
         
           <a   class="site-foot-nav-item" href="/about/">
@@ -5883,6 +5884,31 @@ function lightbox(trigger) {
   <!-- main loader start -->  
   
   <script>console.log("main.js");
+
+/* Fix video poster uses the data-kg-thumbnail value of the parent figure */
+(function () {
+  console.log("repostering ...");
+
+  // Get all video elements within figure elements
+  const videos = document.querySelectorAll("figure video");
+  console.log(videos);
+
+  videos.forEach((video) => {
+    // Get the parent figure element
+    const figure = video.parentElement.parentElement;
+
+    // Get the data attribute value from the figure (assuming data-background is the attribute name)
+    const backgroundUrl = figure.getAttribute('data-kg-thumbnail');
+    console.log(backgroundUrl);
+
+    // Check if the data attribute exists and has a value
+    if (backgroundUrl) {
+      // Set the background image style
+      video.style.backgroundImage = `url(${backgroundUrl})`;
+    }
+  });
+  
+})();
 
 /* Responsive video in post content */
 (function () {
