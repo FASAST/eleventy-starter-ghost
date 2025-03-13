@@ -4,11 +4,111 @@
   <subtitle>Fleet actions in deep space</subtitle>
   <link href="http://stargamer.netlify.app/feed.xml" rel="self"/>
   <link href="http://stargamer.netlify.app"/>
-  <updated>2025-03-10T21:04:29.000+00:00</updated>
+  <updated>2025-03-13T23:13:59.000+00:00</updated>
   <id>http://stargamer.netlify.app/</id>
   <author>
     <name>Star Gamer</name>
   </author>
+  <entry>
+    <title>Lists</title>
+    <link href="http://stargamer.netlify.app/lists/"/>
+    <updated>2025-03-13T23:13:59.000+00:00</updated>
+    <id>http://stargamer.netlify.app/lists/</id>
+    <content type="html">&lt;h2 id=&quot;native&quot;&gt;Native&lt;/h2&gt;&lt;p&gt;How do lists look inside paragraphs and text blocks. Type * text at the start for unordered and type 1. Text for ordered&lt;/p&gt;&lt;ul&gt;&lt;li&gt;How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. &lt;/li&gt;&lt;li&gt;paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. &lt;/li&gt;&lt;li&gt;Short one&lt;/li&gt;&lt;/ul&gt;&lt;ol&gt;&lt;li&gt;This is numbered paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. &lt;/li&gt;&lt;li&gt;This is numbered more paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. How do lists look inside paragraphs and text blocks. &lt;/li&gt;&lt;li&gt;Short one&lt;/li&gt;&lt;/ol&gt;&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Unordered with nested ordered
+&lt;ol&gt;
+&lt;li&gt;This is a line of the list its here for your own good&lt;/li&gt;
+&lt;li&gt;This is a line of the list its here for your own good&lt;/li&gt;
+&lt;li&gt;This is a line of the list its here for your own good&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Unordered with nested ordered&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;ordered with nested ordered
+&lt;ol&gt;
+&lt;li&gt;next&lt;/li&gt;
+&lt;li&gt;next&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Original list&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;List Start
+&lt;ul&gt;
+&lt;li&gt;Sub list start&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Dog
+&lt;ol&gt;
+&lt;li&gt;German Shepherd&lt;/li&gt;
+&lt;li&gt;Belgian Shepherd
+&lt;ol&gt;
+&lt;li&gt;Malinois&lt;/li&gt;
+&lt;li&gt;Groenendael&lt;/li&gt;
+&lt;li&gt;Tervuren&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Cat
+&lt;ol&gt;
+&lt;li&gt;Siberian&lt;/li&gt;
+&lt;li&gt;Siamese&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First phase&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Movement&lt;/li&gt;
+&lt;li&gt;Enegry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Second Phase&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Firing&lt;/li&gt;
+&lt;li&gt;Boarding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Third Phase&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Damage&lt;/li&gt;
+&lt;li&gt;Explosions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List Start&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sub list start&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li&gt;List
+&lt;blockquote&gt;
+&lt;p&gt;quote&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;this is a quote&lt;br /&gt;
+this is nested&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a paragraph&lt;br /&gt;
+This is nested&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Headers</title>
     <link href="http://stargamer.netlify.app/headers/"/>
@@ -65,12 +165,16 @@
   <entry>
     <title>Text Elements</title>
     <link href="http://stargamer.netlify.app/text-elements/"/>
-    <updated>2025-03-12T18:18:32.000+00:00</updated>
+    <updated>2025-03-13T20:47:38.000+00:00</updated>
     <id>http://stargamer.netlify.app/text-elements/</id>
     <content type="html">&lt;hr /&gt;&lt;blockquote&gt;
-&lt;p&gt;Markdown blockquote How to to a quote that is across several lines and is clearly a quote of something important to say&lt;/p&gt;
+&lt;p&gt;Markdown blockquote How to to a quote that is across several lines and is clearly a quote of something important to say&lt;br /&gt;
+Second paragraph quote&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr /&gt;&lt;blockquote&gt;Inline text blockquote This is just text&lt;/blockquote&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, &lt;a href=&quot;/embeds/&quot; rel=&quot;noreferrer&quot;&gt;This is just normal paragraph text,&lt;/a&gt; This is just normal paragraph text.&lt;/p&gt;&lt;hr /&gt;</content>
+&lt;p&gt;&lt;em&gt;Who Said&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;
+&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;
+&lt;hr /&gt;&lt;blockquote&gt;Inline text blockquote This is just text this can&#39;t be multiple paragraphs&lt;/blockquote&gt;&lt;blockquote&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, &lt;/blockquote&gt;&lt;blockquote&gt;This is just normal paragraph text, This is just normal paragraph text.&lt;/blockquote&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text.&lt;/p&gt;&lt;p&gt;This is just normal paragraph text, This is just normal paragraph text, This is just normal paragraph text, &lt;a href=&quot;/embeds/&quot; rel=&quot;noreferrer&quot;&gt;This is just normal paragraph text,&lt;/a&gt; This is just normal paragraph text.&lt;/p&gt;&lt;hr /&gt;</content>
   </entry>
   <entry>
     <title>Embeds</title>

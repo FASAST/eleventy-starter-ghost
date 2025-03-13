@@ -40,15 +40,20 @@ what's here to work the way you'd like it to.
   --font-medium: 600;
   --font-bold: 700;
   --font-heavy: 800;
+  --quote-style: italic;
   --line-height: 1.5em;
   --body-size: 1.7rem;
 
-  /* Sizes */
+  /* layouts */
   --height: 4rem;
   --margin-medium: 1.6rem;
+  --bullet-width: 0.65rem;
   --margin-large: 2.4rem;
   --radius: 0.6rem;
   --max-width: 1120px;
+  --spacing-factor: 1;
+  --spacing-normal: 3rem;
+  --spacing-large: 4.8rem;
   
   /* desktop text sizes */
   --text-huge: 5rem;   /* 50 */
@@ -57,8 +62,8 @@ what's here to work the way you'd like it to.
   --text-medium: 1.6rem;    /* 16 */
   --text-small: 1.4rem; /* 14 */
   --text-tiny: 1.2rem;   /* 12 */
-  --text-xtiny: 1.3rem;  /* 11 */
-
+  --text-xtiny: 1.1rem;  /* 11 */
+  
   /* Ghost bits fall back */
 
   --ghost-accent-color: #ff1a75;
@@ -403,8 +408,7 @@ textarea {
 p,
 ul,
 ol,
-dl,
-blockquote {
+dl {
   margin: 0 0 var(--margin-medium) 0;
 }
 
@@ -412,13 +416,17 @@ ol,
 ul {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-left: var(--bullet-width);
 }
+
+
 
 ol ol,
 ul ul,
 ul ol,
 ol ul {
   margin: var(--margin-medium) 0;
+  margin-left: var(--bullet-width);
 }
 
 ul {
@@ -477,13 +485,9 @@ blockquote {
   /*margin: 0.3em 0 1.8em;*/
   padding: 0 1.6em 0 1.6em;
   border-left: var(--ghost-accent-color) 0.5rem solid;
+  font-style: var(--quote-style);
 }
 
-blockquote p {
-  margin: 0.8em 0;
-  font-size: 1.2em;
-  font-weight: 300;
-}
 
 blockquote small {
   display: inline-block;
@@ -647,11 +651,12 @@ h6 {
   grid-column: main-start / main-end;
 }
 
-.content-tag {
+.content-tag,
+.post-card-tags {
   text-transform: uppercase;
   color: var(--ghost-accent-color);
   margin: 0;
-  font-size: 1.3rem;
+  font-size: var(--text-tiny);
   font-weight: var(--font-medium);
 }
 
@@ -796,11 +801,11 @@ h6 {
 }
 
 .content-body .kg-card {
-  margin-top: 3rem;
+  margin-top: calc(var(--spacing-normal) * var(--spacing-factor,1)) !important;
 }
 
 .content-body>:is(hr,blockquote,iframe)+* {
-    margin-top: 4.8rem !important;
+  margin-top: calc(var(--spacing-large) * var(--spacing-factor,1)) !important;
 }
 
 .content-body pre {
@@ -976,13 +981,14 @@ h6 {
   flex-direction: column;
 }
 
+/*
 .post-card-tags {
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.15em;
   color: var(--color-secondary);
   text-transform: uppercase;
-}
+}*/
 
 .post-card-title {
   margin: 0 0 0.5rem 0;
@@ -1011,8 +1017,9 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 0.5rem 0;
+  margin: 0;
   color: var(--color-secondary);
+  font-size: var(--text-tiny);
 }
 
 .post-card-footer-left {

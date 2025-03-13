@@ -42,6 +42,11 @@
   </url>
   
   <url>
+    <loc>http://stargamer.netlify.app/lists/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
     <loc>http://stargamer.netlify.app/headers/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
@@ -118,6 +123,11 @@
   
   <url>
     <loc>http://stargamer.netlify.app/tag/admin/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/tag/editor/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
