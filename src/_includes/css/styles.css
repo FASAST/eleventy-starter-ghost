@@ -49,6 +49,9 @@ what's here to work the way you'd like it to.
   --margin-medium: 1.6rem;
   --bullet-width: 0.65rem;
   --margin-large: 2.4rem;
+  --margin-normal: 1.6rem;
+  --margin-small: 0.8rem;
+
   --radius: 0.6rem;
   --max-width: 1120px;
   --spacing-factor: 1;
@@ -1064,8 +1067,10 @@ h6 {
   flex-wrap: nowrap;
   align-items: flex-start;
   gap: 2rem;
+  padding-bottom: var(--spacing-normal);
   margin-bottom: 4vw;
   width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .tag-header h1 {
@@ -1083,6 +1088,15 @@ h6 {
 
 .tag-description {
   width: 100%;
+}
+
+.tag-description p.game-data {
+  font-size: var(--text-normal);
+  margin-bottom: var(--margin-small);
+}
+
+.tag-description .game-value {
+  color: var(--color-primary);
 }
 
 @media (max-width: 500px) {

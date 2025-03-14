@@ -3,18 +3,49 @@
 
 {% set title = tag.name %}
 
+{% macro YN(value='yes') %}
+<span class="game-value">{%if value==='yes'%}yes{%else%}no{%endif%}</span>
+{% endmacro %}
+
+{% macro complexity(value=1) %}
+<span class="game-value">{%if value==1%}simple{%elif value==2%}basic{%elif value==3%}intermediate{%elif value==4%}advanced{%else%}complex{%endif%}</span>
+{% endmacro %}
+
+{% macro rawdata(value) %}
+<span class="game-value">{{value}}</span>
+{% endmacro %}
+
 {% block content %}
   <header class="tag-header">
     <div class="tag-description">
       <h1>{{ tag.name }}</h1>
       <p class="tag-item">{{ content | safe }}</p>
+     
+      <!-- games -->
+      {%- for game in collections.games -%}
+        {% if tag.slug in game.data.tags %}
+          <!-- h2>About {{ game.data.title }}</h2 -->
+          <p class="game-data">Fighters - {{YN(game.data.fighters)}}</p>
+          <p class="game-data">Campaign - {{YN(game.data.campaign)}}</p>
+          <p class="game-data">Design system - {{YN(game.data.design)}}</p>
+          <p class="game-data">Boarding - {{YN(game.data.boarding)}}</p>
+          <p class="game-data">Fog of war - {{YN(game.data.fow)}}</p>
+          <p class="game-data">Generic - {{YN(game.data.generic)}}</p>
+          <p class="game-data">Movement - {{rawdata(game.data.movement)}}</p>
+          <p class="game-data">Scale - {{rawdata(game.data.scale)}}</p>
+          <p class="game-data">Complexity - {{complexity(game.data.complexity)}}</p>
+          <p class="game-data">Website - <a href="https://{{game.data.link}}" target="_blank">{{game.data.link}}</a></p>
+        {% endif %}
+      {%- endfor -%}
     </div>
+ 
     {% if tag.feature_image %}
       <div class="tag-image">
         <img class="tag-item" src="{{ tag.feature_image }}">
       </div>
     {% endif %}
   </header>
+
 
   <section class="post-feed">
     {% if tag.posts %}

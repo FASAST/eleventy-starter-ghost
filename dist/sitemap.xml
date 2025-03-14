@@ -145,4 +145,14 @@
     <loc>http://stargamer.netlify.app/tag/news/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/games/full-thrust/</loc>
+    <lastmod>2025-03-14</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/games/star-trek/</loc>
+    <lastmod>2025-03-14</lastmod>
+  </url>
 </urlset>
