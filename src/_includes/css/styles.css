@@ -398,6 +398,11 @@ video {
   vertical-align: middle;
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -807,7 +812,7 @@ h6 {
   margin-top: calc(var(--spacing-normal) * var(--spacing-factor,1)) !important;
 }
 
-.content-body>:is(hr,blockquote,iframe)+* {
+.content-body>:is(hr,blockquote,iframe,div)+* {
   margin-top: calc(var(--spacing-large) * var(--spacing-factor,1)) !important;
 }
 
@@ -1441,6 +1446,11 @@ figure.kg-image-card.kg-width-full {
 .kg-embed-card div iframe {
   position: relative;
 }
+
+.kg-card-embed {
+  margin-top: calc(var(--spacing-normal) * var(--spacing-factor,1)) !important;
+}
+
 
 /*
 .kg-embed-card figcaption {
