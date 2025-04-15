@@ -681,8 +681,6 @@ h6 {
   grid-column: wide-start / wide-end;
 }
 
-
-
 .kg-width-full img {
   width: 100%;
 }
@@ -1447,11 +1445,9 @@ figure.kg-image-card.kg-width-full {
   position: relative;
 }
 
-.kg-card-embed {
-  margin-top: calc(var(--spacing-normal) * var(--spacing-factor,1)) !important;
+.kg-embed-card iframe {
+  background-color: white;
 }
-
-
 /*
 .kg-embed-card figcaption {
   width: 100%;
