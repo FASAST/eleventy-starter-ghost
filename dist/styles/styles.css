@@ -1477,33 +1477,3 @@ figure.kg-image-card.kg-width-full {
 /* Modifications
 /* ---------------------------------------------------------- */
 
-/* Hack to make videos work without all the koenig guff 
- * need to recode for reframe.js
-
-.kg-embed-card {
-  position: relative;
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
-.kg-embed-card::before {
-  display: block;
-  content: "";
-  background: black;
-  padding-bottom: 56.25%;
-}
-
-
-.kg-embed-card:has(div)::before {
-  padding-bottom: 0;
-}
-
-.kg-embed-card iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-*/
