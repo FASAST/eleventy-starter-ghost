@@ -49,8 +49,9 @@
     {%- endblock -%}
 
     
-    <!-- site css reference not inline because of how site deploys we don't want every file changed -->
-    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- site css -->
+    {% set css %}{% include "css/styles.css" %}{% endset %}
+    <style>{{ css | cssmin | safe }}</style>
     
     <!-- ghost accent -->
     <style>:root{ --ghost-accent-color: {{ site.accent_color }} }</style>
@@ -58,7 +59,6 @@
     {%- block cssx -%}
     <!-- extra css required -->
     {%- endblock -%}
-    
     
     <script>document.documentElement.classList.remove('no-js');</script>
     

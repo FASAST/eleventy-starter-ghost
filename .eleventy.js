@@ -27,6 +27,10 @@ module.exports = function (config) {
 
   // Assist RSS feed template
   config.addPlugin(pluginRSS);
+  
+  // Pass through referenced files
+  config.addPassthroughCopy({ "src/_includes/css" : "styles" });
+  config.addPassthroughCopy({ "src/_includes/js" : "scripts" });
 
   // Copy images over from Ghost changes to relative pathname
   // TODO video poster, internal links and ref on links

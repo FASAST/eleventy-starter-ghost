@@ -1,6 +1,5 @@
 {% extends 'layouts/common.njk' %}
-<!-- doc template -->
-
+<!-- doc/page template -->
 
 <!-- need element title -->
 {% set title = doc.title %}
@@ -12,7 +11,7 @@
     <p class="content-excerpt">{{ doc.excerpt }}</p>
     {% if doc.feature_image %}
       <figure class="post-feature-image">
-          <img src="{{ doc.feature_image }}" alt="{{ title }}">
+        <img src="{{ doc.feature_image }}" alt="{{ title }}">
       </figure>
     {% endif %}
     <section class="post-full-content">

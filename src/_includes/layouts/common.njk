@@ -4,51 +4,35 @@
 
 {%- block cssx -%}
   <!-- card ui css needed -->
-  {% set cardcss %}{% include "css/cards.min.css" %}{% endset %}
-  <style>{{ cardcss | cssmin | safe }}</style>
-
-  {% set css %}{% include "css/photoswipe.css" %}{% endset %}
-  <style>{{ css | cssmin | safe }}</style>
+  <link rel="stylesheet" href="/styles/cards.min.css">
+  <link rel="stylesheet" href="/styles/photoswipe.css">
 {%- endblock -%}
 
 
 {%- block scripts -%}
-  <!-- card scripts needed -->
+  <!-- Facebook snippet renderer and more -->
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+ 
+  <!-- cards -->
+  <script src="/scripts/cards.min.js"></script>
+  
+  <!-- video reframer -->
+  <script src="/scripts/lib/reframe.js"></script>
+ 
+  <!-- images loaded -->
+  <script src="/scripts/lib/imagesloaded.pkgd.js"></script>
 
-  <!-- cards start -->
-  {% set libjs %}{% include "js/cards.min.js" %}{% endset %}
-  <script>{{ libjs | safe }}</script>
-  <!-- cards end -->
-
-  <!-- video reframer start -->
-  {% set libjs %}{% include "js/lib/reframe.js" %}{% endset %}
-  <script>{{ libjs | safe }}</script> 
-  <!-- reframer end -->
-
-  <!-- images loaded start -->
-  {% set libjs %}{% include "js/lib/imagesloaded.pkgd.js" %}{% endset %}
-  <script>{{ libjs | safe }}</script> 
-  <!-- images loaded end -->
-
-  <!-- Photoswipe start -->
-  {% set libjs %}{% include "js/lib/photoswipe.js" %}{% endset %}
-  <script>{{ libjs | safe }}</script> 
-  <!-- Photoswipe end -->
-
-  <!-- Photoswipe UI start -->
-  {% set libjs %}{% include "js/lib/photoswipe-ui-defaults.js" %}{% endset %}
-  <script>{{ libjs | safe }}</script> 
-  <!-- Photoswipe UI end -->
-
-  <!-- lightbox start -->  
-  {% set lightboxjs %}{% include "js/lightbox.js" %}{% endset %}
-  <script>{{ lightboxjs | safe }}</script> 
-  <!-- lightbox end -->
-
-  <!-- main loader start -->  
-  {% set mainjs %}{% include "js/main.js" %}{% endset %}
-  <script>{{ mainjs | safe }}</script> 
-  <!-- main end -->
+  <!-- Photoswipe -->
+  <script src="/scripts/lib/photoswipe.js"></script>
+  
+  <!-- Photoswipe UI -->
+  <script src="/scripts/lib/photoswipe-ui-defaults.js"></script>
+  
+  <!-- lightbox --> 
+  <script src="/scripts/lightbox.js"></script>
+  
+  <!-- main loader --> 
+  <script src="/scripts/main.js"></script> 
     
 {%- endblock -%}     
 
