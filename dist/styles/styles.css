@@ -781,6 +781,7 @@ h6 {
   }
 }
 
+/* 
 .content-body h5 {
   display: block;
   margin: 0.5em 0;
@@ -799,6 +800,8 @@ h6 {
   font-size: 2rem;
   font-weight: var(--font-bold);
 }
+
+*/
 
 .content-body figure {
   /*margin: 0.4em 0 1.6em;*/

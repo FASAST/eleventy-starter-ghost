@@ -49,9 +49,9 @@ module.exports = function (config) {
     cacheFile: "",
     transformImgPath: (src) => {
       return "dist" + src;
-    }
+   }
   });
-  */
+  */ 
 
   // final transform to strip ghost links
   // does not work for embedded css URLs
@@ -193,7 +193,11 @@ module.exports = function (config) {
       if (taggedPosts.length) tag.posts = taggedPosts;
 
       tag.url = stripDomain(tag.url);
+      // Bring featured post to the top of the list
+      tag.posts.sort((post, nextPost) => nextPost.featured - post.featured);
     });
+    
+    
 
     return collection;
   });

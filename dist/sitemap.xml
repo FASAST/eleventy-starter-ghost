@@ -12,6 +12,21 @@
   </url>
   
   <url>
+    <loc>http://stargamer.netlify.app/printing/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/basing/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/gamemats/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
     <loc>http://stargamer.netlify.app/games/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
@@ -23,6 +38,16 @@
   
   <url>
     <loc>http://stargamer.netlify.app/about/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/painting/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/terrain/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
@@ -58,6 +83,16 @@
   
   <url>
     <loc>http://stargamer.netlify.app/full-thrust/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/local-image-test/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://stargamer.netlify.app/gallery/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
@@ -103,11 +138,6 @@
   
   <url>
     <loc>http://stargamer.netlify.app/links-test/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/gallery/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
