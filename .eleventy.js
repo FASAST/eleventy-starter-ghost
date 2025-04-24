@@ -197,7 +197,6 @@ module.exports = function (config) {
       tag.posts.sort((post, nextPost) => nextPost.featured - post.featured);
     });
     
-    
 
     return collection;
   });
