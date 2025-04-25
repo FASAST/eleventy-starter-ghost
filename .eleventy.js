@@ -190,11 +190,13 @@ module.exports = function (config) {
         post.url = stripDomain(post.url);
         return post.primary_tag && post.primary_tag.slug === tag.slug;
       });
-      if (taggedPosts.length) tag.posts = taggedPosts;
-
+      if (taggedPosts.length) {
+        tag.posts = taggedPosts;
+        // Bring featured post to the top of the list
+        tag.posts.sort((post, nextPost) => nextPost.featured - post.featured);
+      }
       tag.url = stripDomain(tag.url);
-      // Bring featured post to the top of the list
-      tag.posts.sort((post, nextPost) => nextPost.featured - post.featured);
+      
     });
     
 

@@ -67,12 +67,7 @@
   </url>
   
   <url>
-    <loc>http://stargamer.netlify.app/lists/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/headers/</loc>
+    <loc>http://stargamer.netlify.app/coming-soon/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
@@ -87,17 +82,12 @@
   </url>
   
   <url>
-    <loc>http://stargamer.netlify.app/local-image-test/</loc>
+    <loc>http://stargamer.netlify.app/new-fasa-carrier-models/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
     <loc>http://stargamer.netlify.app/gallery/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/oembed/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
@@ -112,57 +102,12 @@
   </url>
   
   <url>
-    <loc>http://stargamer.netlify.app/embeds/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/video/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/facebook/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/video-local/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/todo/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/links-test/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/all-cards-test/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/coming-soon/</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
     <loc>http://stargamer.netlify.app/_redirects</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
     <loc>http://stargamer.netlify.app/robots.txt</loc>
-    <lastmod>2024-05-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://stargamer.netlify.app/tag/admin/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   

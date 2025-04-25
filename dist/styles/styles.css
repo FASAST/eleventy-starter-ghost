@@ -490,7 +490,7 @@ dd {
 }
 
 blockquote {
-  /*margin: 0.3em 0 1.8em;*/
+  /* margin: 0.3em 0 1.8em; */
   padding: 0 1.6em 0 1.6em;
   border-left: var(--ghost-accent-color) 0.5rem solid;
   font-style: var(--quote-style);
@@ -813,9 +813,20 @@ h6 {
   margin-top: calc(var(--spacing-normal) * var(--spacing-factor,1)) !important;
 }
 
-.content-body>:is(hr,blockquote,iframe,div)+* {
+.content-body :is(.kg-card,table)+:not(.kg-card):not(table):not([id]) {
+    margin-top: calc(var(--spacing-large) * var(--spacing-factor, 1));
+}
+
+.content-body > :is(hr,blockquote,iframe,div) {
+  margin-top: calc(var(--spacing-large) * var(--spacing-factor,1)) !important;
+  position: relative;
+}
+
+
+.content-body > :is(hr,blockquote,iframe,div)+* {
   margin-top: calc(var(--spacing-large) * var(--spacing-factor,1)) !important;
 }
+
 
 .content-body pre {
   margin: 0.4em 0 1.8em;
@@ -1361,10 +1372,12 @@ h6 {
   line-height: 1.5em;
 }
 
+/* not required
 .kg-bookmark-author:after {
   content: "•";
   margin: 0 6px;
 }
+*/
 
 .kg-bookmark-publisher {
   overflow: hidden;
