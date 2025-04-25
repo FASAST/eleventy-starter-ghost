@@ -1,21 +1,30 @@
 <!-- footer -->
-<footer class="site-foot container">
-  <div class="site-foot-nav ">
-    <div class="site-foot-nav-left">
-      <a aria-current="page" class="" href="/">
-        {{ site.title }}
-      </a> &mdash; {{ site.description }} &mdash; &copy; 2025 
+<footer class="site-foot container" >
+  <div class="site-foot-layout">
+  {% if site.logo %}
+    <div class="site-foot-nav left">
+      <a {% if page.url == "/" %}aria-current="page"{% endif %} href="/">
+        <img class="site-logo" src="{{ site.logo }}" alt="{{ site.title }}">
+      </a>
     </div>
-    <!--
-    {% if collections.docs %}
-      <div class="site-foot-nav-right">
-        {% for doc in collections.docs %}
-          <a {% if page.url == doc.url %}aria-current="page"{% endif %}  class="site-foot-nav-item" href="{{ doc.url }}">
+  {% endif %}
+    <div class="site-foot-nav">
+      {% for item in site.secondary_navigation %}
+        <a {% if page.url == item.url %}aria-current="page"{% endif %} class="site-nav-item" href="{{ item.url }}">
+            {{ item.label }}
+        </a>
+      {% endfor %}
+      {% for doc in collections.docs %}
+        {% if doc.featured %}
+          <a {% if page.url == doc.url %}aria-current="page"{% endif %}  class="site-nav-item" href="{{ doc.url }}">
             {{ doc.meta_title if doc.meta_title else doc.title }}
           </a>
-        {% endfor %}
-      </div>
-    {% endif %}
-  -->
+        {% endif %}
+      {% endfor %}
+    </div>
+  
+  <div class="site-foot-nav right">
+      {{ site.description }} &mdash; &copy; 2025 
   </div>
+</div>
 </footer>
